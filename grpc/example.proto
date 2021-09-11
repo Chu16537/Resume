@@ -1,0 +1,23 @@
+syntax = "proto3";
+package protoc;
+
+service MatchService {
+    rpc unary(UnaryReq)returns(UnaryRes){};
+    rpc Ack(AckReq)returns(AckRes){}
+}
+
+message UnaryReq{
+    string unaryReq = 1;
+}
+
+message UnaryRes{
+    string unaryRes = 1;
+}
+
+message AckReq{
+
+}
+message AckRes{
+
+}
+
